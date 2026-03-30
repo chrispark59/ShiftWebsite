@@ -5,7 +5,7 @@
 
 :root {
     /* Colors - Cyan/Blue accent theme */
-    --primary: #5BA4C9;
+    --primary: #5DA0FF;
     --primary-light: #7EC8E3;
     --primary-dark: #3D8DB5;
     --accent: #6BB8D9;
@@ -651,6 +651,15 @@ a {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     margin-bottom: var(--space-lg);
+}
+
+.register-iframe {
+    width: 100%;
+    max-width: 800px;
+    min-width: 500px;
+    height: 500px;
+    border: 1px solid #bfcbda88;
+    border-radius: 4px;
 }
 
 /* ============================================
