@@ -3,6 +3,25 @@
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Mobile menu toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileDropdown = document.querySelector('.mobile-dropdown');
+
+    if (mobileMenuBtn && mobileDropdown) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            mobileDropdown.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuBtn.contains(e.target) && !mobileDropdown.contains(e.target)) {
+                mobileMenuBtn.classList.remove('active');
+                mobileDropdown.classList.remove('active');
+            }
+        });
+    }
+
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
