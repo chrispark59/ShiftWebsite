@@ -790,6 +790,13 @@ a {
         font-size: 0.875rem;
     }
 
+    .hero-banner {
+        height: auto;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
     .info-strip {
         flex-direction: column;
         gap: var(--space-md);
@@ -848,5 +855,9 @@ a {
 
     .sponsor-card img {
         max-height: 80px;
+    }
+
+    .hero-banner {
+        max-width: 280px;
     }
 }
