@@ -832,6 +832,7 @@ a {
 
 .mobile-dropdown.active {
     display: block;
+    margin-top: 70px;
 }
 
 .mobile-link {
